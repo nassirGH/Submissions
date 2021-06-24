@@ -1,0 +1,91 @@
+body {
+	margin: 30px;
+	padding: 0;
+	color: #302d26;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	background-color: #a09c93;
+	background-position: center
+}
+
+.img_frame img_float_l{
+	float: right;
+	margin: 3px 30px 5px 0 ;
+	background-color: black;
+}
+
+p{
+	color: red;
+	font-size: 15px;
+}
+
+.b{
+	font-size: 20px;
+	
+}
+
+#tooplate_wrapper {
+	width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+#tooplate_sidebar {
+	position: fixed;
+	width: 240px;
+	text-align: right;
+}
+
+#tooplate_sidebar {
+	position: fixed;
+	width: 240px;
+	text-align: right;
+}
+
+#tooplate_main {
+	width: 650px;
+	padding: 60px 30px 60px 40px;
+	float: right;
+}
+
+.cleaner { clear: both }
+.h10 { height: 10px }
+.h20 { height: 20px }
+.h30 { height: 30px }
+.h40 { height: 40px }
+.h50 { height: 50px }
+.divider { margin-bottom: 40px; padding-bottom: 20px; background: url(images/tooplate_divider.png) repeat-x bottom }
+
+
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+	background-color: #111;
+  }
+  
+  .active {
+	background-color: #4CAF50;
+  }
+
+  #list{
+	  color: red;
+  }

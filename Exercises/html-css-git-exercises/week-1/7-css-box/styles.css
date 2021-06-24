@@ -1,0 +1,9 @@
+.pages__page {
+  border: 1px solid #4491db;
+  border-radius: 4px;
+  background: #fff;
+}
+.countries {
+  padding: -1rem -1rem 2rem -1rm;
+  margin: -0.5rem 0rem 0rem 0rm;
+}

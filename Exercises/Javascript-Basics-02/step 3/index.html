@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Step 3</title>
+</head>
+<body>
+  <form>
+    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
+
+    <div>
+    </div>
+  </form>
+</body>
+
+<script>
+  document.querySelector('#name').addEventListener("change",()=>{
+    document.querySelector("div").innerHTML=document.querySelector("#name").value;
+  })
+    
+
+</script>
+</html>
+

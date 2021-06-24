@@ -1,0 +1,12 @@
+.site-header__title ~ p {
+  color: white;
+  margin-bottom: 0rem;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 12px;
+}
+.message:last-child {
+  box-shadow: 4px 4px 0 #dba944;
+}

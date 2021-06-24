@@ -1,0 +1,247 @@
+/** Main **/
+
+body {
+  font: 16px Helvetica, Sans-Serif;
+  padding: 50px 20px 20px 20px;
+}
+
+header > div {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+hgroup {
+  float: left;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+header figure {
+  position: absolute;
+  right: 20px;
+}
+
+header h2 {
+  display: none;
+}
+
+header figure img {
+  transform: rotate(-13deg);
+  width: 200px;
+  height: 200px;
+}
+
+.content {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+section {
+  float: left;
+  padding-left: 160px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  margin-right: 10px;
+  font-style: italic;
+  height: 100%;
+  border-right: 1px solid black;
+}
+
+/** Skills **/
+
+.skills {
+  padding-top: 15px;
+}
+
+.skill {
+  width: 130px;
+  margin: 5px;
+  float: left;
+  padding: 10px;
+  background: teal;
+  color: white;
+}
+
+.skill span {
+  width: 130px;
+  display: inline-block;
+}
+
+.skill span::after {
+  content: "";
+  color: white;
+  display: block;
+  float: right;
+}
+
+.skill[data-skill="1"] span::after {
+  content: "★";
+}
+.skill[data-skill="1"] span::after {
+  content: "★";
+}
+.skill[data-skill="2"] span::after {
+  content: "★★";
+}
+.skill[data-skill="3"] span::after {
+  content: "★★";
+}
+.skill[data-skill="4"] span::after {
+  content: "★★★";
+}
+.skill[data-skill="5"] span::after {
+  content: "★★★";
+}
+.skill[data-skill="6"] span::after {
+  content: "★★★★";
+}
+.skill[data-skill="7"] span::after {
+  content: "★★★★";
+}
+.skill[data-skill="8"] span::after {
+  content: "★★★★★";
+}
+.skill[data-skill="9"] span::after {
+  content: "★★★★★";
+}
+.skill[data-skill="10"]span::after {
+  content: "★★★★★";
+}
+
+.skills-primary .skill {
+  font-size: 1.2em;
+}
+
+.skills-secondary .skill {
+  font-size: 0.7em;
+}
+
+/** About **/
+
+#about {
+  max-width: 640px;
+  text-align: justify;
+  margin-bottom: 100px;
+  font-style: italic;
+  color: #999;
+  padding-left: 0;
+}
+
+#about h3 {
+  display: none;
+}
+
+/** Experiences **/
+
+.experience h4 {
+  color: teal;
+  margin-bottom: 3px;
+  float: left;
+}
+
+.experience p {
+  margin-top: 30px;
+  float: left;
+}
+
+.experience-details {
+  color: #999;
+  float: right;
+  margin-top: 18px;
+}
+.experience-type {
+  font-weight: bold;
+}
+.experience-institution {
+  display: none;
+}
+
+.experience-date-separator {
+  color: teal;
+}
+
+/** Contacts **/
+
+#contact h3 {
+  display: none;
+}
+
+.contact {
+  margin: 0;
+  width: 130px;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 50% 50%;
+  float: left;
+  display: block;
+  margin: 3px;
+}
+
+.contact:hover {
+  background-color: teal;
+}
+
+.contact-type,
+.contact-value {
+  display: block;
+  float: left;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.contact-type {
+  display: none;
+}
+
+.contact-value a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+
+.contact-skype {
+  display: none;
+}
+
+.contact-phone {
+  background-image: url("../images/phone.png");
+}
+.contact-email {
+  background-image: url("../images/email.png");
+}
+.contact-github {
+  background-image: url("../images/github.png");
+}
+.contact-facebook {
+  background-image: url("../images/facebook.png");
+}
+
+/** Media Queries**/
+
+@media only screen and (max-width: 650px) {
+  header figure {
+    display: none;
+  }
+  section {
+    padding-left: 0;
+  }
+  h3 {
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+}

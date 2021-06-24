@@ -1,0 +1,24 @@
+.countries {
+  display: flex;
+}
+
+.country--croatia {
+  order: -1;
+}
+.country--brazil {
+  order: 4;
+}
+
+.countries--second > .country--brazil {
+  order: 1;
+}
+
+.countries--third > .country--croatia {
+  order: 3;
+}
+.countries--third > .country--uganda {
+  order: -2;
+}
+.countries--third > .country--laos {
+  order: -1;
+}

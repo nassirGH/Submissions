@@ -1,0 +1,50 @@
+<html> 
+<head> 
+    <title>Number Guessing Game</title> 
+    <style> 
+    html { 
+    font-family: sans-serif; 
+    } 
+    body { 
+    min-width: 480px;
+    margin: 0 auto; 
+    } 
+    </style> 
+</head> 
+<body> 
+<h1>Guessing machine Game</h1> 
+<p>We have selected a random number between 1 - 100.  
+See if you can guess it.</p> 
+  
+<div class="form"> 
+    <label for="guessField">Enter a guess: </label> 
+    <input type = "text" id = "guessField" class = "guessField"> 
+    <input type = "submit" value = "Submit guess" class = "guessSubmit" id = "submitguess"> 
+</div> 
+  
+<script> 
+  
+    var y = Math.floor(Math.random() * 100) + 1; 
+    var guess = 0;   
+    document.getElementById("submitguess").onclick = function(){     
+    var x = document.getElementById("guessField").value; 
+  
+    if(x == y) 
+    {     
+       alert(" Correct with "
+               + guess + " trials! "); 
+    } 
+    else if(x > y)
+    {     
+       guess++; 
+       alert("Too Large trial " + guess + "/8"); 
+    } 
+    else
+    { 
+       guess++; 
+       alert("Too Small trial " + guess + "/8") ;
+    } 
+    } 
+</script> 
+</body> 
+</html>  

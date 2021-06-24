@@ -1,0 +1,144 @@
+.app {
+  transition: background-color 1s ease-in;
+}
+.sunny {
+  background-color: #2490e1 !important;
+}
+.rainy {
+  background-color: #9ebad5 !important;
+}
+/* sun #2490E1  #246CD7*/
+/* rain #9EBAD5  #6C83AA*/
+.app__header,
+.app__main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*  Search bar */
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: #7b88dc;
+  padding: 17px 0;
+}
+
+.city {
+  background-color: #7b88dc;
+  border: none;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 17px;
+  border-bottom: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+.btn-search {
+  background-color: #6455c9;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+/* Current weather */
+.img {
+  height: 100px;
+  width: 100px;
+}
+
+.container {
+  padding-top: 30px;
+  background-color: #9cc2f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 1s ease-in-out;
+}
+.extend {
+  padding-bottom: 100px;
+}
+.today-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.today-txt {
+  color: #fff;
+  font-weight: bold;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+
+.bold {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.bold2 {
+  font-weight: bold;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.hourly-title {
+  color: #fff;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.hours-weather {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+}
+
+
+.icon {
+  margin: 20px 0;
+  width: 60px;
+  height: 60px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+@media all and (max-width: 390px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .btn-search {
+    margin-top: 10px;
+  }
+
+  .b-r {
+    border-right: 1px solid #fff;
+  }
+  .b-l {
+    border-left: 1px solid #fff;
+  }
+}
+@media all and (max-width: 275px) {
+  .b-rl {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+  }
+}
